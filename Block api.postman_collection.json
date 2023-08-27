@@ -142,7 +142,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"c95d4772-8fd3-4e23-98a6-3f04534a7afc\",\r\n    \"blockOrder\": 0,\r\n    \"businessName\": \"Local Plumber\",\r\n    \"logo\": true,\r\n    \"navigationMenu\": [\r\n      {\r\n        \"link\": \"home url\",\r\n        \"text\": \"Home\",\r\n        \"submenu\": null\r\n      },\r\n      {\r\n        \"link\": null,\r\n        \"text\": \"Submenu\",\r\n        \"submenu\": [\r\n          {\r\n            \"link\": \"url\",\r\n            \"text\": \"Link 1\",\r\n            \"submenu\": null\r\n          },\r\n          {\r\n            \"link\": \"url\",\r\n            \"text\": \"Link 2\",\r\n            \"submenu\": null\r\n          },\r\n          {\r\n            \"link\": \"url\",\r\n            \"text\": \"Link 3\",\r\n            \"submenu\": null\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"ctaButton\": {\r\n      \"text\": \"Call Now\",\r\n      \"icon\": \"fa icon\",\r\n      \"status\": true,\r\n      \"target\": \"(555) 555 555 555\",\r\n      \"event\": {\r\n        \"id\": \"8c39aa33-f32b-4ac4-9153-2704537abd94\"\r\n      }\r\n    }\r\n  }",
+					"raw": " {\r\n    \"id\": \"7efaa0cd-1b5e-4fad-88ce-0df4c2de8c54\",\r\n    \"blockOrder\": 1,\r\n    \"headlineText\": \"Headline\",\r\n    \"descriptionText\": \"In depth description\",\r\n    \"heroImage\": \"imageUrl\",\r\n    \"ctaButton\": {\r\n      \"text\": \"Check services\",\r\n      \"icon\": \"fa icon\",\r\n      \"status\": true,\r\n      \"target\": \"#services\",\r\n      \"event\": {\r\n        \"id\": \"07beb7ba-461c-4bc6-9872-4bae4ecf05e5\"\r\n      }\r\n    },\r\n    \"imageAlignment\": {\r\n      \"id\": \"824e1d90-3eca-4a03-b2cf-8981a03b757f\"\r\n    },\r\n    \"contentAlignment\": {\r\n      \"id\": \"81e7a0b9-9016-42e0-9647-dd86690c1443\"\r\n    }\r\n  }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -150,7 +150,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7236/block?key=newBusiness&sectionId=c95d4772-8fd3-4e23-98a6-3f04534a7afc",
+					"raw": "https://localhost:7236/block?key=newBusiness&sectionId=7efaa0cd-1b5e-4fad-88ce-0df4c2de8c54",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -166,7 +166,65 @@
 						},
 						{
 							"key": "sectionId",
-							"value": "c95d4772-8fd3-4e23-98a6-3f04534a7afc"
+							"value": "7efaa0cd-1b5e-4fad-88ce-0df4c2de8c54"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7236/block?key=newBusiness&sectionId=7efaa0cd-1b5e-4fad-88ce-0df4c2de8c54",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7236",
+					"path": [
+						"block"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "newBusiness"
+						},
+						{
+							"key": "sectionId",
+							"value": "7efaa0cd-1b5e-4fad-88ce-0df4c2de8c54"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7236/block?key=test&sectionId=7efaa0cd-1b5e-4fad-88ce-0df4c2de8c54",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7236",
+					"path": [
+						"block"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "test"
+						},
+						{
+							"key": "sectionId",
+							"value": "7efaa0cd-1b5e-4fad-88ce-0df4c2de8c54"
 						}
 					]
 				}
