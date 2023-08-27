@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "216e0335-2588-42a6-bfd6-be0e87004aa9",
+		"name": "Block api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14395231"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7236/block?key=newBusiness",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7236",
+					"path": [
+						"block"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "newBusiness"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"newBusiness\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7236/block",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7236",
+					"path": [
+						"block"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"3778c6c0-7b35-4e68-8a4a-389e5e34908f\",\r\n    \"blockOrder\": 2,\r\n    \"headlineText\": \"Services\",\r\n    \"serviceCards\": [\r\n      {\r\n        \"serviceName\": \"Service example\",\r\n        \"serviceDescription\": \"Service description\",\r\n        \"serviceImage\": \"example image url\",\r\n        \"ctaButton\": {\r\n          \"text\": \"Call\",\r\n          \"icon\": \"fa icon\",\r\n          \"status\": true,\r\n          \"target\": \"#call\",\r\n          \"event\": {\r\n            \"id\": \"07beb7ba-461c-4bc6-9872-4bae4ecf05e5\"\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7236/block?key=newBusiness&sectionId=3778c6c0-7b35-4e68-8a4a-389e5e34908f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7236",
+					"path": [
+						"block"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "newBusiness"
+						},
+						{
+							"key": "sectionId",
+							"value": "3778c6c0-7b35-4e68-8a4a-389e5e34908f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c95d4772-8fd3-4e23-98a6-3f04534a7afc\",\r\n    \"blockOrder\": 0,\r\n    \"businessName\": \"Local Plumber\",\r\n    \"logo\": true,\r\n    \"navigationMenu\": [\r\n      {\r\n        \"link\": \"home url\",\r\n        \"text\": \"Home\",\r\n        \"submenu\": null\r\n      },\r\n      {\r\n        \"link\": null,\r\n        \"text\": \"Submenu\",\r\n        \"submenu\": [\r\n          {\r\n            \"link\": \"url\",\r\n            \"text\": \"Link 1\",\r\n            \"submenu\": null\r\n          },\r\n          {\r\n            \"link\": \"url\",\r\n            \"text\": \"Link 2\",\r\n            \"submenu\": null\r\n          },\r\n          {\r\n            \"link\": \"url\",\r\n            \"text\": \"Link 3\",\r\n            \"submenu\": null\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"ctaButton\": {\r\n      \"text\": \"Call Now\",\r\n      \"icon\": \"fa icon\",\r\n      \"status\": true,\r\n      \"target\": \"(555) 555 555 555\",\r\n      \"event\": {\r\n        \"id\": \"8c39aa33-f32b-4ac4-9153-2704537abd94\"\r\n      }\r\n    }\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7236/block?key=newBusiness&sectionId=c95d4772-8fd3-4e23-98a6-3f04534a7afc",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7236",
+					"path": [
+						"block"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "newBusiness"
+						},
+						{
+							"key": "sectionId",
+							"value": "c95d4772-8fd3-4e23-98a6-3f04534a7afc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update 3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c95d4772-8fd3-4e23-98a6-3f04534a7afc\",\r\n    \"blockOrder\": 0,\r\n    \"businessName\": \"Local Plumber\",\r\n    \"logo\": true,\r\n    \"navigationMenu\": [\r\n      {\r\n        \"link\": \"home url\",\r\n        \"text\": \"Home\",\r\n        \"submenu\": null\r\n      },\r\n      {\r\n        \"link\": null,\r\n        \"text\": \"Submenu\",\r\n        \"submenu\": [\r\n          {\r\n            \"link\": \"url\",\r\n            \"text\": \"Link 1\",\r\n            \"submenu\": null\r\n          },\r\n          {\r\n            \"link\": \"url\",\r\n            \"text\": \"Link 2\",\r\n            \"submenu\": null\r\n          },\r\n          {\r\n            \"link\": \"url\",\r\n            \"text\": \"Link 3\",\r\n            \"submenu\": null\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"ctaButton\": {\r\n      \"text\": \"Call Now\",\r\n      \"icon\": \"fa icon\",\r\n      \"status\": true,\r\n      \"target\": \"(555) 555 555 555\",\r\n      \"event\": {\r\n        \"id\": \"8c39aa33-f32b-4ac4-9153-2704537abd94\"\r\n      }\r\n    }\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7236/block?key=newBusiness&sectionId=c95d4772-8fd3-4e23-98a6-3f04534a7afc",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7236",
+					"path": [
+						"block"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "newBusiness"
+						},
+						{
+							"key": "sectionId",
+							"value": "c95d4772-8fd3-4e23-98a6-3f04534a7afc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
